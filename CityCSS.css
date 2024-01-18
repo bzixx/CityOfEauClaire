@@ -1,0 +1,158 @@
+﻿global{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: darksalmon;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+}
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+iframe{
+    border:0;
+}
+
+div {
+    height: fit-content;
+    border-radius: 10px;
+}
+
+ul {
+    padding: 2rem;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-image:url(Arrow.tiff);
+    font-size: 1rem;
+    min-width: inherit;
+    vertical-align: middle;
+}
+
+ul li{
+    padding-bottom: 2rem;  
+}
+
+ul li:hover{
+    background: ivory;
+    border: 2px solid;
+    opacity: 0.9;
+    
+}
+
+ul li a{
+    color: black;
+    
+}
+
+ul li a:active{
+    color: blue;
+}
+
+ol{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td, th {
+    text-align: center;
+    padding: 8px;
+    border: solid;
+}
+
+tr:hover {
+    background-color: #D6EEEE;
+}
+
+.doubleborder {
+    border: double;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content:center;
+}
+.margins{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.basicallyFullWidth{
+        width: 85%;
+}
+
+.halfWidth {
+    width: 50%;
+}
+
+.twentyWidth{
+    width:20%;
+}
+
+.tenWidth{
+    width: 10%;
+}
+
+
+.smallWidth {
+    width: 20px;
+}
+
+.XLFont {
+    font-size: x-large;
+}
+.largeDataFont{
+    font-size:50px;
+}
+
+.iframeSizing {
+    height: 200px;
+    width: 100%;
+}
+
+.smallicon {
+    height: 100px;
+    width: 100px;
+}
+
+.tile {
+    width: 40%;
+}
+
+.navigationMenu {
+}
+
+.secondaryColor {
+    background-color: whitesmoke;
+}
+
+.cornBack{
+    background-color: cornsilk;
+}
+
+.snowBack{
+    background-color: snow;
+}
+
