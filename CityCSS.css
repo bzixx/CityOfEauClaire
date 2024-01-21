@@ -76,7 +76,7 @@ td, th {
     border: solid;
 }
 
-tr:hover {
+tr.hoverClass:hover {
     background-color: #D6EEEE;
 }
 

@@ -5,33 +5,34 @@
 <head>
     <meta charset="utf-8">
     <title>Visit EC Project</title>
+    <link rel="stylesheet" href="CityCSS.css">
+    <script src="CityScripts.js"></script>
 
-    <link rel="stylesheet" href="cityCSS.css">
 </head>
 
-<body>
-    <h1 class="center" ">Explore the Eau Claire Region with AuGust</h1>
+<body id="MainBody">
+    <h1 class="center" id="MainPageTitle" >Explore the Eau Claire Region with AuGust</h1>
 
     <table class="doubleborder">
         <tr>
-            <th class="center secondaryColor"><a href="#HotelDivision">Hotel Jump Button</a> </th>
-            <th class="center"> <a href="#WeatherDivision">Weather Jump Button</a> </th>
-            <th class="center secondaryColor"> <a href="#FitnessDivision">Fitness Jump Button</a> </th>
-            <th class="center"> <a href="#ArtDivision">Entertainment Jump Button</a> </th>
-            <th class="center secondaryColor"> <a href="#LinksDivision">Links Jump Button</a> </th>
+            <th class="center secondaryColor"><button id="HotelJumpButton" onclick="goToHotels()">Hotel Jump Button</button></th>
+            <th class="center"> <button id="WeatherJumpButton" onclick="goToWeather()">Weather Jump Button</button> </th>
+            <th class="center secondaryColor"> <button id="FitnessJumpButton" onclick="goToFitness()">Fitness Jump Button</button> </th>
+            <th class="center"> <button id="EntertainmentJumpButton" onclick="goToEntertainment()">Entertainment Jump Button</button></th>
+            <th class="center secondaryColor"> <button id="LinksJumpButton" onclick="goToLinks()">Links Jump Button</button> </th>
         </tr>
     </table>
 
     <br>
 
     <div>
-        <img src="ECFlyover.jpg" alt="Downtown Eau Claire Riverfront" class="fullWidth">
+        <img src="ECFlyover.jpg" id="MainPagePic" alt="Downtown Eau Claire Riverfront" class="fullWidth" onclick="changeImagetoFall()">
 
     </div>
 
     <br>
 
-    <div>
+    <div class="MainDiv" >
         <h2 class="center">Major Business Names in the Chippewa Valley</h2>
         <h4 class="center">These businesses have made a name for themselves Nationwide and have a large Employment presence in the Chippewa Valley </h4>
         <ol>
@@ -45,36 +46,36 @@
         </ol>
 
         <table>
-            <tr>
+            <tr >
                 <th>Image of Business in Eau Claire</th>
                 <th class="twentyWidth">Description</th>
             </tr>
-            <tr>
-                <td> <img class="fullWidth" src="Menards.png" alt="Menards Employment Building"></td>
+            <tr class="hoverClass" >
+                <td> <img class="fullWidth" id="MainMenardsPic" src="Menards.png" alt="Menards Employment Building"></td>
                 <td> <p class="margins">Menards Employment Center and Corporate Operations in North Eau Claire.</td>
             </tr>
-            <tr>
-                <td> <img class="fullWidth" src="Banbury.jpg" alt="Banbury Place Factory"></td>
+            <tr class="hoverClass" >
+                <td> <img class="fullWidth" id="MainBanburyPic" src="Banbury.jpg" alt="Banbury Place Factory"></td>
                 <td><p class="margins">The forerunner of Uniroyal, Inc.'s Eau Claire Plant was the Gillette Safety Tire Company, founded in Eau Claire in 1916 by Raymond B. Gillette of Michigan, an inventor of a safety shoe for tires. S.P. Woodard of the Car Spring Rubber Company served as the company's first president; Gillette, first vice president and general manager. The plant engineer was R.W. Hutchens. Approximately 250 people were employed at the plant which produced 200 rubber tires and 200 inner tubes per day.</p></td>
 
             </tr>
-            <tr>
-                <td> <img class="fullWidth" src="JAMF.jpg" alt="JAMF Eau Claire Office"></td>
+            <tr class="hoverClass" >
+                <td> <img class="fullWidth" id="MainJAMFPic" src="JAMF.jpg" alt="JAMF Eau Claire Office"></td>
                 <td><p class="margins">JMAF's humble beginnings were born in the computer lab at the University of Wisconsin - Eau Claire when our co-founder, Zach Halmstad, created Casper Suite (now known as Jamf Pro). And the rest, as they say, is history. Ever since, JAMF has lived Zach’s vision to create more efficient ways to deploy, manage and protect Apple devices.</p></td>
 
             </tr>
-            <tr>
-                <td> <img class="fullWidth" src="HSHS.jpg" alt="HSHS Hostpital Eau Claire"></td>
+            <tr class="hoverClass" >
+                <td> <img class="fullWidth" id="MainHSHSPic" src="HSHS.jpg" alt="HSHS Hostpital Eau Claire"></td>
                 <td><p class="margins">HSHS Sacred Heart's history dates back to 1889, two Hospital Sisters of St. Francis settled in Eau Claire. The first hospital was started in a house on Putnam.</p></td>
 
             </tr>
-            <tr>
-                <td> <img class="fullWidth" src="Nestle.jpg" alt="Nestle Foods Factory"></td>
+            <tr class="hoverClass" >
+                <td> <img class="fullWidth" id="MainNestlePic" src="Nestle.jpg" alt="Nestle Foods Factory"></td>
                 <td><p class="margins">Opening in 1987 as a co-manufacturing site with Land O’Lakes, the facility produced Nestlé formulas like Carnation Good Start and Follow Up until Nestlé purchased the plant in 1990</p></td>
 
             </tr>
-            <tr>
-                <td> <img class="fullWidth" src="RCU.jpg" alt="Royal Credit Union Headquarters"></td>
+            <tr class="hoverClass" >
+                <td> <img class="fullWidth" id="MainRCUPic" src="RCU.jpg" alt="Royal Credit Union Headquarters"></td>
                 <td><p class="margins">Royal Credit Union was started in April of 1964 by employees of the Uniroyal Tire Company in Eau Claire, Wisconsin. That first year, there were just 100 Royal Credit Union Members between the employees and their families. By November of 1967, Royal had 2,100 Members and surpassed $1 million in assets</p></td>
 
             </tr>
@@ -95,14 +96,14 @@
                 <th class="tenWidth">Rating:</th>
                 <th class="tenWidth">Average Cost:</th>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>The Lismore</td>
                 <td><iframe class="iframeSizing" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4767556652196!2d-91.50186912315361!3d44.81185117672662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8bd0d6de0b97b%3A0x4f77871eecdd69be!2sThe%20Lismore%20Hotel%20Eau%20Claire%20-%20a%20DoubleTree%20by%20Hilton%20Hotel!5e0!3m2!1sen!2sus!4v1704603118053!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Downtown Eau Claire</td>
                 <td>4.5 Stars</td>
                 <td>$135/Night</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>The Oxbow</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.324679216812!2d-91.50195572315346!3d44.814949776522056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8bd12fd8d2945%3A0x7c63527b0e8d299b!2sThe%20Oxbow%20Hotel!5e0!3m2!1sen!2sus!4v1704603284969!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Downtown Eau Claire</td>
@@ -110,21 +111,21 @@
                 <td>$120/Night</td>
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Fairfield Inn & Suites</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.3089226293187!2d-91.44867992315275!3d44.83564177515635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8bcaf32e83135%3A0x7e6706874698a15e!2sFairfield%20Inn%20%26%20Suites%20by%20Marriott%20Eau%20Claire%20Chippewa%20Falls!5e0!3m2!1sen!2sus!4v1704603322374!5m2!1sen!2sus" class="iframeSizing"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Lake Hallie</td>
                 <td>4.5 Stars</td>
                 <td>$110/Night</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Cobblestone Hotel & Suites</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446088.2960075035!2d-93.69918820625004!3d44.935714699999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8a64277083391%3A0x1ccd8600623eb83f!2sCobblestone%20Hotel%20%26%20Suites%20-%20Chippewa%20Falls!5e0!3m2!1sen!2sus!4v1704603358374!5m2!1sen!2sus" class="iframeSizing"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Chippewa Falls</td>
                 <td>4.3 Stars</td>
                 <td>$115/Night</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Metropolis Resort</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.806281864398!2d-91.46829307315538!3d44.764365329858904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8be9e63ebb513%3A0xd54dc40921bf9f61!2sMetropolis%20Resort%20%26%20Conference%20Center!5e0!3m2!1sen!2sus!4v1704603387931!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Eau Claire</td>
@@ -152,14 +153,14 @@
                 <th class="tenWidth">Average Low</th>
                 <th class="tenWidth">Percipitation:</th>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>January</th>
                 <td><img src="snow.png" class="smallicon" alt="Snow icon"></td>
                 <td class="largeDataFont">22°F</td>
                 <td class="largeDataFont">4°F</td>
                 <td class="largeDataFont">5 Days</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>Febuary</th>
                 <td><img src="snow.png" class="smallicon" alt="Snow icon"></td>
                 <td class="largeDataFont">28°F</td>
@@ -167,21 +168,21 @@
                 <td class="largeDataFont">4 Days</td>
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>March</th>
                 <td><img src="cloud.png" class="smallicon" alt="Cloud icon"></td>
                 <td class="largeDataFont">41°F</td>
                 <td class="largeDataFont">21°F</td>
                 <td class="largeDataFont">6 Days</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>April</th>
                 <td><img src="rain.png" class="smallicon" alt="Rian icon"></td>
                 <td class="largeDataFont">57°F</td>
                 <td class="largeDataFont">34°F</td>
                 <td class="largeDataFont">8 Days</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>May</th>
                 <td><img src="sun.png" class="smallicon" alt="Sun icon"></td>
                 <td class="largeDataFont">70°F</td>
@@ -189,7 +190,7 @@
                 <td class="largeDataFont">9 Days</td>
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>June</th>
                 <td><img src="sun.png" class="smallicon" alt="Sun icon"></td>
                 <td class="largeDataFont">78°F</td>
@@ -198,7 +199,7 @@
 
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>July</th>
                 <td><img src="sun.png" class="smallicon" alt="Sun icon"></td>
                 <td class="largeDataFont">83°F</td>
@@ -207,7 +208,7 @@
 
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>August</th>
                 <td><img src="sun.png" class="smallicon" alt="Sun icon"></td>
                 <td class="largeDataFont">80°F</td>
@@ -216,7 +217,7 @@
 
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>September</th>
                 <td><img src="cloud.png" class="smallicon" alt="Cloud icon"></td>
                 <td class="largeDataFont">71°F</td>
@@ -225,7 +226,7 @@
 
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>October</th>
                 <td><img src="rain.png" class="smallicon" alt="Rain icon"></td>
                 <td class="largeDataFont">58°F</td>
@@ -234,23 +235,19 @@
 
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>November</th>
                 <td><img src="cloud.png" class="smallicon" alt="Cloud icon"></td>
                 <td class="largeDataFont">41°F</td>
                 <td class="largeDataFont">25°F</td>
                 <td class="largeDataFont">5 Days</td>
-
-re
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <th>December</th>
                 <td><img src="snow.png" class="smallicon" alt="Snow icon"></td>
                 <td class="largeDataFont">27°F</td>
                 <td class="largeDataFont">11°F</td>
                 <td class="largeDataFont">5 Days</td>
-
-
             </tr>
         </table>
 
@@ -282,14 +279,14 @@ re
                 <th class="tenWidth">Rating:</th>
                 <th class="tenWidth">Average Cost:</th>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Micon Cinemas</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45316.31985673778!2d-91.51281952857971!3d44.77530077672768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8bbcf0db633a3%3A0x81bbbd360ec4203!2sMicon%20Cinemas%20Oakwood!5e0!3m2!1sen!2sus!4v1704611637923!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45198.858070592956!2d-91.45294727832025!3d44.9247869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8a60e0a69c273%3A0xa81ced55b6f0b138!2sMicon%20Cinemas%20Chippewa%20Falls!5e0!3m2!1sen!2sus!4v1704611688653!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Eau Claire and Chippewa Falls</td>
                 <td>4.5 Stars</td>
                 <td>$20-$30</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Action City & Chaos Water Park</td>
                 <td><iframe class="iframeSizing" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11331.266878768329!2d-91.47677792472564!3d44.76415247239088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8be9e63ebb513%3A0xa86547961ffec14a!2sAction%20City!5e0!3m2!1sen!2sus!4v1704653694290!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>South Eau Claire</td>
@@ -297,21 +294,21 @@ re
                 <td>$50-$200</td>
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Oakwood Mall Shopping Area</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.296747960877!2d-91.44374120885317!3d44.7747552292945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8bbf83c568637%3A0x89e3c4c047b70b2c!2sOakwood%20Mall!5e0!3m2!1sen!2sus!4v1704654006349!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>South Eau Claire</td>
                 <td>4.5 Stars</td>
                 <td>Depends on your Budget</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Leinie Lodge</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.022743333071!2d-91.3953722!3d44.9432056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8a65ace5bccab%3A0x8f266a60d8479dcc!2sLeinie%20Lodge!5e0!3m2!1sen!2sus!4v1704654060819!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Chippewa Falls</td>
                 <td>4.8 Stars</td>
                 <td>$20-$50</td>
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Pablo Center</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4873613404648!2d-91.50406935885171!3d44.81163507686149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8bd1bafa8964b%3A0x40207e4a054ba2b3!2sPablo%20Center%20at%20the%20Confluence!5e0!3m2!1sen!2sus!4v1704654091072!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Downtown Eau Claire</td>
@@ -319,7 +316,7 @@ re
                 <td>$40-$50</td>
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Chippewa Valley Museum</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.495159754094!2d-91.52017925885168!3d44.81147617687203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f897d5f79ff3f7%3A0x50373362fe5f9a28!2sChippewa%20Valley%20Museum!5e0!3m2!1sen!2sus!4v1704654141751!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Eau Claire</td>
@@ -327,7 +324,7 @@ re
                 <td>$20-$40</td>
 
             </tr>
-            <tr>
+            <tr class="hoverClass" >
                 <td>Biking Tails</td>
                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3226903066816!2d-91.49882520000001!3d44.81499029999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f8bdb005710c65%3A0xc19a1675bfca21b1!2sEau%20Claire%20E-Bike%20Rental!5e0!3m2!1sen!2sus!4v1704654201102!5m2!1sen!2sus" class="iframeSizing" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                 <td>Eau Claire</td>
